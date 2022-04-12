@@ -824,6 +824,7 @@ html {
 
 .footer {
   background-image: url("./../img/footer-1.webp");
+  background-color: tomato;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

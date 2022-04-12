@@ -73,6 +73,9 @@
             line-height: 1.4;
             color: $color-white;
             text-shadow: 0px 0px 4px rgba($color: $color-black, $alpha: 0.2);
+            @include smobile {
+                font-size: 1.6rem;
+            }
         }
         &:hover {
             transform: translateY(-4px);

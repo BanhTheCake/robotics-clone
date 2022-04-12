@@ -11,9 +11,11 @@
     }
     @include mobile {
         height: auto;
+        padding-bottom: 4rem;
     }
     @include smobile {
         height: auto;
+        padding-bottom: 4rem;
     }
     &__wrapper {
         width: 100%;

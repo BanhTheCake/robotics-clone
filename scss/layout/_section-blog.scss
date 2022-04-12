@@ -14,6 +14,7 @@
             padding-bottom: 1rem;
         }
         & img {
+            height: 100%;
             margin: auto;
             width: 100%;
             object-fit: cover;
@@ -40,10 +41,12 @@
             margin-bottom: 2rem;
             @include mobile {
                 margin-bottom: 1rem;
+                font-size: 1.4rem;
             }
             @include smobile {
                 line-height: 1.4;
                 margin-bottom: 1rem;
+                font-size: 1.4rem;
             }
         }
         &-title {
@@ -70,9 +73,10 @@
             margin-bottom: 2rem;
             @include mobile {
                 margin-bottom: 1rem;
+                line-height: 1.5;
             }
             @include smobile {
-                line-height: 1.4;
+                line-height: 1.5;
                 margin-bottom: 1rem;
             }
         }
@@ -86,8 +90,10 @@
             }
             @include mobile {
                 line-height: 1.6;
+                font-size: 1.4rem;
             }
             @include smobile {
+                font-size: 1.4rem;
                 line-height: 1.6;
             }
         }

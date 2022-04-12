@@ -89,11 +89,13 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .header {
     height: auto;
+    padding-bottom: 4rem;
   }
 }
 @media screen and (max-width: 575.98px) {
   .header {
     height: auto;
+    padding-bottom: 4rem;
   }
 }
 .header__wrapper {
@@ -366,6 +368,7 @@ html {
   }
 }
 .section-blog__img img {
+  height: 100%;
   margin: auto;
   width: 100%;
   object-fit: cover;
@@ -398,12 +401,14 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section-blog__box-slogan {
     margin-bottom: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 575.98px) {
   .section-blog__box-slogan {
     line-height: 1.4;
     margin-bottom: 1rem;
+    font-size: 1.4rem;
   }
 }
 .section-blog__box-title {
@@ -438,11 +443,12 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section-blog__box-sub {
     margin-bottom: 1rem;
+    line-height: 1.5;
   }
 }
 @media screen and (max-width: 575.98px) {
   .section-blog__box-sub {
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 1rem;
   }
 }
@@ -460,10 +466,12 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section-blog__box-text {
     line-height: 1.6;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 575.98px) {
   .section-blog__box-text {
+    font-size: 1.4rem;
     line-height: 1.6;
   }
 }
@@ -569,6 +577,11 @@ html {
   color: #fff;
   text-shadow: 0px 0px 4px rgba(34, 34, 34, 0.2);
 }
+@media screen and (max-width: 575.98px) {
+  .section-unique__box-text {
+    font-size: 1.6rem;
+  }
+}
 .section-unique__box:hover {
   transform: translateY(-4px);
 }
@@ -600,6 +613,7 @@ html {
   }
 }
 .section-blog__img img {
+  height: 100%;
   margin: auto;
   width: 100%;
   object-fit: cover;
@@ -632,12 +646,14 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section-blog__box-slogan {
     margin-bottom: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 575.98px) {
   .section-blog__box-slogan {
     line-height: 1.4;
     margin-bottom: 1rem;
+    font-size: 1.4rem;
   }
 }
 .section-blog__box-title {
@@ -672,11 +688,12 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section-blog__box-sub {
     margin-bottom: 1rem;
+    line-height: 1.5;
   }
 }
 @media screen and (max-width: 575.98px) {
   .section-blog__box-sub {
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 1rem;
   }
 }
@@ -694,10 +711,12 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section-blog__box-text {
     line-height: 1.6;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 575.98px) {
   .section-blog__box-text {
+    font-size: 1.4rem;
     line-height: 1.6;
   }
 }
@@ -816,6 +835,7 @@ html {
 @media screen and (max-width: 575.98px) {
   .section-new__box-text {
     margin-bottom: 1rem;
+    line-height: 1.6;
   }
 }
 .section-new__box-date {
@@ -923,11 +943,15 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .footer__form-input input {
     margin-bottom: 2rem;
+    height: 4rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 575.98px) {
   .footer__form-input input {
     margin-bottom: 2rem;
+    height: 4.6rem;
+    font-size: 1.6rem;
   }
 }
 .footer__form-input button {
@@ -950,11 +974,15 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .footer__form-input button {
     margin: 0;
+    height: 4rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 575.98px) {
   .footer__form-input button {
     margin: 0;
+    height: 4.6rem;
+    font-size: 1.6rem;
   }
 }
 .footer__form-input button:hover {

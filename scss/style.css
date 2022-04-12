@@ -586,7 +586,7 @@ html {
   transform: translateY(-4px);
 }
 .section-unique__box:hover .section-unique__box-title {
-  color: #828fff;
+  color: #222;
 }
 
 .section-blog {

@@ -1,0 +1,84 @@
+.section-unique {
+    background-image: url("../../img/section-unique-1.webp");
+    background-position: center;
+    background-size: cover;
+    padding: 10rem 0;
+    @include smobile {
+        padding: 4rem 0;
+    }
+    &__title {
+        margin: auto;
+        margin-bottom: 6rem;
+        @include smobile {
+            margin-bottom: 4rem;
+        }
+        &-main {
+            font-size: 3rem;
+            font-weight: normal;
+            color: $color-white;
+            margin-bottom: 2rem;
+            @include mobile {
+                text-align: center;
+                font-size: 2.8rem;
+            }
+            @include smobile {
+                text-align: center;
+                padding: 0 1rem;
+            }
+        }
+        &-sub {
+            display: block;
+            text-align: center;
+            font-size: 1.4rem;
+            color: $color-white;
+            @include mobile {
+                font-size: 1.8rem;
+            }
+            @include smobile {
+                text-align: center;
+                padding: 0 2rem;
+                line-height: 1.4;
+            }
+        }
+    }
+    &__box {
+        background-color: $color-white;
+        padding: 4rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+        background-image: linear-gradient(to right top, $color-primary, $color-main);
+        @include smobile {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+        &-title {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            padding-bottom: 1.4rem;
+            transition: 0.2s;
+            color: $color-white;
+            text-shadow: 0px 0px 4px rgba($color: $color-black, $alpha: 0.2);
+            & ion-icon {
+                font-size: 2.6rem;
+                margin-right: 1rem;
+                margin-top: -1px;
+            }
+        }
+        &-text {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            color: $color-white;
+            text-shadow: 0px 0px 4px rgba($color: $color-black, $alpha: 0.2);
+        }
+        &:hover {
+            transform: translateY(-4px);
+        }
+        &:hover &-title {
+            color: $color-main;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+$color-white: #fff;
+$color-white-2: #f9f9ff;
+$color-black: #222;
+$color-text: #777;
+$color-main: #828fff;
+$color-primary: #d496ff;
+$fonts: "Poppins", sans-serif;
+
+@mixin pc {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        @content;
+    }
+}
+@mixin smobile {
+    @media screen and (max-width: 575.98px) {
+        @content;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: $fonts;
+}
+
+// reusable
+
+.pb-sm-3 {
+    @media screen and (max-width: 575.98px) {
+        padding-bottom: 30px;
+    }
+}
+
+.pb-m-3 {
+    @media screen and (max-width: 991.98px) {
+        padding-bottom: 30px;
+    }
+}
+
+.pb-3 {
+    padding-bottom: 30px;
+}
+
+.pb-6 {
+    padding-bottom: 6rem;
+}
+
+.btn {
+    display: inline-block;
+    margin: auto;
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-black;
+    padding: 1.4rem 2.4rem;
+    background-color: $color-white;
+    border-radius: 2px;
+    border: 1px solid $color-white;
+    font-weight: 500;
+
+    transition: 0.2s;
+    &--transparent:hover {
+        background-color: transparent;
+        color: $color-white;
+    }
+    &--color:hover {
+        background-image: linear-gradient(to right top, $color-main, $color-primary);
+        color: $color-white;
+        animation: FadeIn 0.2s ease;
+    }
+    &--white {
+        background-image: linear-gradient(to right top, $color-main, $color-primary);
+        color: $color-white;
+        border: 1px solid $color-main;
+        &:hover {
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

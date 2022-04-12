@@ -1,0 +1,22 @@
+.section-logo {
+    padding: 10rem 0;
+    @include smobile {
+        padding: 4rem 0;
+    }
+    &__box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        & img {
+            width: 14%;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: 0.2s;
+            cursor: pointer;
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+    }
+}

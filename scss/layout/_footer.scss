@@ -1,0 +1,170 @@
+.footer {
+    background-image: url("../../img/footer-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    color: $color-white;
+    @include tablet {
+        padding-bottom: 0;
+    }
+    @include mobile {
+        padding-bottom: 0;
+    }
+    @include smobile {
+        padding-bottom: 0;
+    }
+
+    &__menu {
+        @include smobile {
+            text-align: center;
+        }
+        &-title {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+        &-nav {
+            list-style-type: none;
+            &-item {
+                margin-bottom: 1.6rem;
+                &--link {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $color-white;
+                    font-size: 1.4rem;
+                    padding: 0.4rem;
+                    transition: 0.2s;
+                }
+                &:hover &--link {
+                    background-color: $color-main;
+                    color: $color-black;
+                    transform: translateY(-4px);
+                }
+            }
+        }
+    }
+    &__form {
+        &-title {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+        &-sub {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            @include mobile {
+                line-height: 1.4;
+            }
+            @include smobile {
+                line-height: 1.4;
+            }
+        }
+        &-input {
+            width: 500px;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            @include mobile {
+                flex-direction: column;
+            }
+            @include smobile {
+                flex-direction: column;
+                width: 100%;
+            }
+            input {
+                flex-grow: 1;
+                outline: none;
+                border: none;
+                height: 3.6rem;
+                padding: 0 2rem;
+                font-family: inherit;
+                border-radius: 100rem;
+                @include mobile {
+                    margin-bottom: 2rem;
+                }
+                @include smobile {
+                    margin-bottom: 2rem;
+                }
+            }
+            button {
+                height: 3.6rem;
+                outline: none;
+                padding: 0 2rem;
+                border: none;
+                border-radius: 100rem;
+                background-image: linear-gradient(to right, $color-primary, $color-main);
+                color: $color-white;
+                font-size: 1.2rem;
+                font-family: inherit;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-left: 2rem;
+                flex-shrink: 0;
+                cursor: pointer;
+                transition: 0.2s;
+                @include mobile {
+                    margin: 0;
+                }
+                @include smobile {
+                    margin: 0;
+                }
+                &:hover {
+                    transform: translateY(-4px);
+                    &:active {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+    &__copyright {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include tablet {
+            text-align: center;
+        }
+        @include mobile {
+            line-height: 1.6;
+        }
+        @include smobile {
+            line-height: 1.6;
+        }
+        & p {
+            height: fit-content;
+            font-size: 1.2rem;
+        }
+    }
+    &__logo {
+        display: flex;
+        @include tablet {
+            justify-content: center;
+        }
+        @include smobile {
+            justify-content: center;
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+            &--link {
+                display: inline-block;
+                padding: 1rem;
+                font-size: 3rem;
+                background-color: $color-black;
+                color: $color-white;
+                transition: 0.2s;
+            }
+            &:hover &--link {
+                background-image: linear-gradient(to right top, $color-main, $color-primary);
+                animation: FadeIn 0.2s linear;
+                transform: translateY(-4px);
+                &:active {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}

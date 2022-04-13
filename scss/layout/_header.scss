@@ -20,6 +20,7 @@
     &__wrapper {
         width: 100%;
     }
+
     &__nav {
         display: flex;
         align-items: center;
@@ -33,22 +34,157 @@
             object-fit: cover;
         }
     }
+    &__box {
+        label {
+            display: block;
+            position: relative;
+            z-index: 99999;
+            @include pc {
+                display: none;
+            }
+            @include laptop {
+                display: none;
+            }
+            cursor: pointer;
+            transition: 0.2s;
+            color: $color-white;
+            ion-icon {
+                font-size: 4rem;
+            }
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+        & input:checked ~ .header__background {
+            transform: scale(500);
+            background-color: $color-main;
+        }
+        & input:checked ~ .header__layout {
+            width: 100%;
+            pointer-events: all;
+            opacity: 1;
+        }
+    }
+    &__background {
+        @include tablet {
+            position: fixed;
+            top: 0rem;
+            right: 0rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: 0.6s;
+            z-index: 99;
+        }
+        @include mobile {
+            position: fixed;
+            top: 0rem;
+            right: 0rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: 0.6s;
+            z-index: 99;
+        }
+        @include smobile {
+            position: fixed;
+            top: 0rem;
+            right: 0rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: 0.6s;
+            z-index: 99;
+        }
+    }
+    &__layout {
+        @include tablet {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            transition: 0.6s;
+            pointer-events: none;
+            opacity: 0;
+            z-index: 99;
+        }
+        @include mobile {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            transition: 0.6s;
+            pointer-events: none;
+            opacity: 0;
+            z-index: 99;
+        }
+        @include smobile {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            transition: 0.6s;
+            pointer-events: none;
+            opacity: 0;
+            z-index: 99;
+        }
+    }
+
     &__menu {
         display: flex;
         list-style-type: none;
         @include tablet {
-            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
         }
         @include mobile {
-            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
         }
         @include smobile {
-            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
         }
     }
     &__item {
         &:not(:last-child) {
             margin-right: 1rem;
+            @include tablet {
+                text-align: center;
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+            @include mobile {
+                text-align: center;
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+            @include smobile {
+                text-align: center;
+                margin: 0;
+                margin-bottom: 1rem;
+            }
         }
         &--link {
             display: inline-block;
@@ -59,6 +195,15 @@
             color: $color-white;
             border-radius: 4px;
             transition: 0.2s;
+            @include tablet {
+                font-size: 3rem;
+            }
+            @include mobile {
+                font-size: 2.4rem;
+            }
+            @include smobile {
+                font-size: 2.4rem;
+            }
         }
         &:hover &--link {
             background-color: tomato;

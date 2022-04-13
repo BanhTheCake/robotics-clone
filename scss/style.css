@@ -112,27 +112,177 @@ html {
   height: auto;
   object-fit: cover;
 }
+.header__box label {
+  display: block;
+  position: relative;
+  z-index: 99999;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .header__box label {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header__box label {
+    display: none;
+  }
+}
+.header__box label ion-icon {
+  font-size: 4rem;
+}
+.header__box label:hover {
+  transform: translateY(-2px);
+}
+.header__box input:checked ~ .header__background {
+  transform: scale(500);
+  background-color: #828fff;
+}
+.header__box input:checked ~ .header__layout {
+  width: 100%;
+  pointer-events: all;
+  opacity: 1;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header__background {
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.6s;
+    z-index: 99;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header__background {
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.6s;
+    z-index: 99;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .header__background {
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.6s;
+    z-index: 99;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header__layout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.6s;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 99;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header__layout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.6s;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 99;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .header__layout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.6s;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 99;
+  }
+}
 .header__menu {
   display: flex;
   list-style-type: none;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .header__menu {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .header__menu {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
   }
 }
 @media screen and (max-width: 575.98px) {
   .header__menu {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
   }
 }
 .header__item:not(:last-child) {
   margin-right: 1rem;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header__item:not(:last-child) {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header__item:not(:last-child) {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .header__item:not(:last-child) {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
 }
 .header__item--link {
   display: inline-block;
@@ -143,6 +293,21 @@ html {
   color: #fff;
   border-radius: 4px;
   transition: 0.2s;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header__item--link {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header__item--link {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .header__item--link {
+    font-size: 2.4rem;
+  }
 }
 .header__item:hover .header__item--link {
   background-color: tomato;
